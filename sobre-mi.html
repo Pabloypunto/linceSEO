@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LinceSEO - Sobre Mí</title>
+    <title>LinceSEO - Contacto</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <nav>
@@ -17,8 +18,26 @@
         </ul>
     </nav>
     <div class="container">
-        <h1>Sobre Mí - LinceSEO</h1>
-        <p>Mi nombre es Pablo y soy el fundador de LinceSEO. Soy un apasionado del marketing digital y me especializo en el posicionamiento web. Con mi experiencia y conocimiento, estoy comprometido a ayudar a mis clientes a mejorar su visibilidad en línea y alcanzar sus objetivos comerciales.</p>
+        <h1>Contacto - LinceSEO</h1>
+        <div class="contacto-container">
+            <p>Mi nombre es Pablo y soy el fundador de LinceSEO. Graduado en Contabilidad y Finanzas por la Universidad de Oviedo y con un Máster en Marketing Digital y Redes Sociales por la Universidad Camilo José Cela de Madrid, estoy comprometido a ayudar a mis clientes a mejorar su visibilidad en línea y alcanzar sus objetivos comerciales.</p>
+            <form action="#" method="POST" class="contacto-formulario">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+                <button type="submit">Enviar</button>
+            </form>
+            <div class="redes-sociales">
+                <h2>Sígueme en redes sociales:</h2>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/pablonaves/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://www.instagram.com/_pablonp_/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </body>
 </html>
