@@ -11,10 +11,6 @@
         .servicio {
             text-align: center;
             margin-bottom: 50px;
-            display: none;
-        }
-        .servicio.active {
-            display: block;
         }
         .icono {
             font-size: 48px;
@@ -33,7 +29,22 @@
             border-radius: 5px;
             padding: 10px 20px;
             cursor: pointer;
+        }
+        .detalles-servicio {
+            display: none;
+            text-align: left;
             margin-top: 20px;
+        }
+        .detalles-servicio.active {
+            display: block;
+        }
+        .boton-cerrar {
+            background-color: #ccc;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -48,52 +59,38 @@
     </nav>
     <div class="container">
         <h1>Servicios de LinceSEO</h1>
-        <div class="servicio" id="optimizacion">
+        <div class="servicio">
             <i class="fas fa-cogs icono"></i>
             <h2 class="titulo-servicio">Optimización On-Page</h2>
-            <button class="boton-ver-mas" onclick="mostrarServicio('optimizacion')">Ver más</button>
-            <div>
+            <button class="boton-ver-mas" onclick="mostrarDetalles('optimizacion')">Ver más</button>
+            <div class="detalles-servicio" id="optimizacion-detalles">
+                <p>Optimizamos tu sitio web desde dentro para mejorar su visibilidad en los motores de búsqueda. Nuestros servicios incluyen:</p>
                 <ul>
                     <li>Análisis de palabras clave</li>
                     <li>Optimización de títulos y meta descripciones</li>
                     <li>Mejora de la estructura del sitio</li>
                     <li>Optimización de imágenes y contenido</li>
                 </ul>
+                <button class="boton-cerrar" onclick="ocultarDetalles('optimizacion')">Cerrar</button>
             </div>
         </div>
-        <div class="servicio" id="contenido">
+        <div class="servicio">
             <i class="fas fa-file-alt icono"></i>
             <h2 class="titulo-servicio">Creación de Contenido</h2>
-            <button class="boton-ver-mas" onclick="mostrarServicio('contenido')">Ver más</button>
-            <div>
+            <button class="boton-ver-mas" onclick="mostrarDetalles('contenido')">Ver más</button>
+            <div class="detalles-servicio" id="contenido-detalles">
+                <p>Producimos contenido de alta calidad y relevante para tu audiencia y los motores de búsqueda. Nuestros servicios incluyen:</p>
                 <ul>
                     <li>Investigación de palabras clave</li>
                     <li>Desarrollo de contenido único y atractivo</li>
                     <li>Optimización para SEO</li>
                     <li>Publicación y promoción de contenido</li>
                 </ul>
+                <button class="boton-cerrar" onclick="ocultarDetalles('contenido')">Cerrar</button>
             </div>
         </div>
-        <div class="servicio" id="enlaces">
+        <div class="servicio">
             <i class="fas fa-link icono"></i>
             <h2 class="titulo-servicio">Construcción de Enlaces</h2>
-            <button class="boton-ver-mas" onclick="mostrarServicio('enlaces')">Ver más</button>
-            <div>
-                <ul>
-                    <li>Investigación y análisis de enlaces</li>
-                    <li>Construcción de enlaces naturales y relevantes</li>
-                    <li>Desarrollo de estrategias de enlace personalizadas</li>
-                    <li>Seguimiento y análisis de resultados</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        function mostrarServicio(id) {
-            var servicio = document.getElementById(id);
-            servicio.classList.toggle('active');
-        }
-    </script>
-</body>
-</html>
+            <button class="boton-ver-mas" onclick="mostrarDetalles('enlaces')">Ver más</button>
+            <div class="
