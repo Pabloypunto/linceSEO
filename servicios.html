@@ -11,27 +11,26 @@
         .servicio {
             text-align: center;
             margin-bottom: 50px;
+            display: none;
         }
-        .servicio h2 {
-            font-size: 24px;
-            margin-bottom: 10px;
+        .servicio:first-child {
+            margin-top: 50px;
         }
-        .servicio p {
-            font-size: 18px;
-            margin-bottom: 20px;
-        }
-        .servicio ul {
-            list-style-type: disc;
-            text-align: left;
-            margin-left: 40px;
-        }
-        .servicio ul li {
-            font-size: 16px;
-            margin-bottom: 10px;
+        .servicio.active {
+            display: block;
         }
         .icono {
             font-size: 48px;
             margin-bottom: 20px;
+        }
+        .boton-servicio {
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin: 10px;
         }
     </style>
 </head>
@@ -46,7 +45,7 @@
     </nav>
     <div class="container">
         <h1>Servicios de LinceSEO</h1>
-        <div class="servicio">
+        <div class="servicio" id="optimizacion">
             <i class="fas fa-cogs icono"></i>
             <h2>Optimización On-Page</h2>
             <p>Optimizamos tu sitio web desde dentro para mejorar su visibilidad en los motores de búsqueda. Nuestros servicios incluyen:</p>
@@ -57,7 +56,8 @@
                 <li>Optimización de imágenes y contenido</li>
             </ul>
         </div>
-        <div class="servicio">
+        <button class="boton-servicio" onclick="mostrarServicio('optimizacion')">Ver más</button>
+        <div class="servicio" id="contenido">
             <i class="fas fa-file-alt icono"></i>
             <h2>Creación de Contenido</h2>
             <p>Producimos contenido de alta calidad y relevante para tu audiencia y los motores de búsqueda. Nuestros servicios incluyen:</p>
@@ -68,7 +68,8 @@
                 <li>Publicación y promoción de contenido</li>
             </ul>
         </div>
-        <div class="servicio">
+        <button class="boton-servicio" onclick="mostrarServicio('contenido')">Ver más</button>
+        <div class="servicio" id="enlaces">
             <i class="fas fa-link icono"></i>
             <h2>Construcción de Enlaces</h2>
             <p>Construimos una red de enlaces de calidad que aumentan la autoridad y relevancia de tu sitio web. Nuestros servicios incluyen:</p>
@@ -79,6 +80,14 @@
                 <li>Seguimiento y análisis de resultados</li>
             </ul>
         </div>
+        <button class="boton-servicio" onclick="mostrarServicio('enlaces')">Ver más</button>
     </div>
+
+    <script>
+        function mostrarServicio(id) {
+            var servicio = document.getElementById(id);
+            servicio.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
