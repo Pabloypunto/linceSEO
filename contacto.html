@@ -6,6 +6,7 @@
     <title>LinceSEO - Contacto</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <nav>
@@ -18,7 +19,24 @@
     </nav>
     <div class="container">
         <h1>Contacto - LinceSEO</h1>
-        <p>¡Contáctanos para empezar a mejorar el SEO de tu sitio web hoy mismo!</p>
+        <div class="contacto-container">
+            <form action="#" method="POST" class="contacto-formulario">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+                <button type="submit">Enviar</button>
+            </form>
+            <div class="redes-sociales">
+                <h2>Sígueme en redes sociales:</h2>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/pablonaves/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://www.instagram.com/_pablonp_/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </body>
 </html>
