@@ -11,12 +11,22 @@
         .servicio {
             text-align: center;
             margin-bottom: 50px;
+            border: 2px solid #000;
+            border-radius: 10px;
+            padding: 20px;
         }
-        .servicio h2 {
+        .servicio:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        .icono {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .titulo-servicio {
             font-size: 24px;
             margin-bottom: 10px;
         }
-        .servicio p {
+        .descripcion {
             font-size: 18px;
             margin-bottom: 20px;
         }
@@ -28,11 +38,6 @@
         .servicio ul li {
             font-size: 16px;
             margin-bottom: 10px;
-        }
-        .icono {
-            font-size: 48px;
-            margin-bottom: 20px;
-            margin-top: 20px; /* Separación adicional del icono y el título */
         }
     </style>
 </head>
@@ -49,8 +54,8 @@
         <h1>Servicios de LinceSEO</h1>
         <div class="servicio">
             <i class="fas fa-cogs icono"></i>
-            <h2>Optimización On-Page</h2>
-            <p>Optimizamos tu sitio web desde dentro para mejorar su visibilidad en los motores de búsqueda. Nuestros servicios incluyen:</p>
+            <h2 class="titulo-servicio">Optimización On-Page</h2>
+            <p class="descripcion">Optimizamos tu sitio web desde dentro para mejorar su visibilidad en los motores de búsqueda. Nuestros servicios incluyen:</p>
             <ul>
                 <li>Análisis de palabras clave</li>
                 <li>Optimización de títulos y meta descripciones</li>
@@ -60,8 +65,8 @@
         </div>
         <div class="servicio">
             <i class="fas fa-file-alt icono"></i>
-            <h2>Creación de Contenido</h2>
-            <p>Producimos contenido de alta calidad y relevante para tu audiencia y los motores de búsqueda. Nuestros servicios incluyen:</p>
+            <h2 class="titulo-servicio">Creación de Contenido</h2>
+            <p class="descripcion">Producimos contenido de alta calidad y relevante para tu audiencia y los motores de búsqueda. Nuestros servicios incluyen:</p>
             <ul>
                 <li>Investigación de palabras clave</li>
                 <li>Desarrollo de contenido único y atractivo</li>
@@ -71,8 +76,8 @@
         </div>
         <div class="servicio">
             <i class="fas fa-link icono"></i>
-            <h2>Construcción de Enlaces</h2>
-            <p>Construimos una red de enlaces de calidad que aumentan la autoridad y relevancia de tu sitio web. Nuestros servicios incluyen:</p>
+            <h2 class="titulo-servicio">Construcción de Enlaces</h2>
+            <p class="descripcion">Construimos una red de enlaces de calidad que aumentan la autoridad y relevancia de tu sitio web. Nuestros servicios incluyen:</p>
             <ul>
                 <li>Investigación y análisis de enlaces</li>
                 <li>Construcción de enlaces naturales y relevantes</li>
