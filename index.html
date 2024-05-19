@@ -9,8 +9,19 @@
     <link rel="stylesheet" href="css/estilos_menu.css">
     <style>
         body {
-            text-align: center;
             font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
         }
         .logo {
             margin-top: 50px;
@@ -34,11 +45,13 @@
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
     </nav>
-    <div class="logo">
-        <img src="img/logo_sin_fondo.png" alt="LinceSEO Logo">
-    </div>
-    <div class="frase-inspiracional">
-        "El SEO no es algo que haces más. Es lo que haces mejor."
+    <div class="container">
+        <div class="logo">
+            <img src="img/logo_sin_fondo.png" alt="LinceSEO Logo">
+        </div>
+        <div class="frase-inspiracional">
+            "El SEO no es algo que haces más. Es lo que haces mejor."
+        </div>
     </div>
 </body>
 </html>
