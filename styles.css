@@ -37,6 +37,7 @@ nav a:hover {
     width: 80%;
     margin: auto;
     padding: 20px;
+    text-align: center; /* Centra el contenido del contenedor */
 }
 
 h1 {
@@ -45,4 +46,11 @@ h1 {
 
 p {
     text-align: justify;
+}
+
+.container img {
+    max-width: 100%; /* Asegura que la imagen no se salga del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Evita espacios no deseados debajo de la imagen */
+    margin: 20px auto; /* Centra la imagen horizontalmente y añade un espacio arriba y abajo */
 }
