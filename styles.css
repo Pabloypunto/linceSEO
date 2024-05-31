@@ -46,19 +46,32 @@ h1 {
     margin-bottom: 20px;
 }
 
-p {
-    text-align: justify;
-    margin-bottom: 20px;
-    line-height: 1.6;
-}
-
 .container img {
-    max-width: 50%; /* Hace que la imagen sea más pequeña */
+    max-width: 30%; /* Hace que la imagen sea más pequeña */
     height: auto; /* Mantiene la proporción de la imagen */
     display: block; /* Evita espacios no deseados debajo de la imagen */
     margin: 20px auto; /* Centra la imagen horizontalmente y añade un espacio arriba y abajo */
 }
 
-.container p:first-of-type {
-    margin-bottom: 40px; /* Añade más espacio debajo del primer párrafo */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: calc(50% - 20px); /* Ajusta el ancho de las cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card p {
+    text-align: justify;
+    margin: 0;
+    line-height: 1.6;
 }
