@@ -42,15 +42,23 @@ nav a:hover {
 
 h1 {
     text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 
 p {
     text-align: justify;
+    margin-bottom: 20px;
+    line-height: 1.6;
 }
 
 .container img {
-    max-width: 100%; /* Asegura que la imagen no se salga del contenedor */
+    max-width: 50%; /* Hace que la imagen sea más pequeña */
     height: auto; /* Mantiene la proporción de la imagen */
     display: block; /* Evita espacios no deseados debajo de la imagen */
     margin: 20px auto; /* Centra la imagen horizontalmente y añade un espacio arriba y abajo */
+}
+
+.container p:first-of-type {
+    margin-bottom: 40px; /* Añade más espacio debajo del primer párrafo */
 }
