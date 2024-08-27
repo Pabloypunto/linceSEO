@@ -86,6 +86,71 @@ nav a:hover {
     color: #ddd;
 }
 
+/* Página de Servicios */
+.servicios-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.servicio {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servicio:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.icono {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #e74c3c;
+}
+
+.titulo-servicio {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #e74c3c;
+}
+
+.descripcion {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #ddd;
+}
+
+.servicio ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+.servicio ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+    color: #fff;
+}
+
+.servicio ul li::before {
+    content: "\f00c"; /* Código de icono FontAwesome */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    color: #e74c3c;
+}
+
 /* Adaptabilidad */
 @media (max-width: 768px) {
     .main-image {
@@ -93,10 +158,15 @@ nav a:hover {
         max-width: 300px; /* Ajusta el tamaño de la imagen en pantallas pequeñas */
     }
 
-    .card {
+    .card, .servicio {
         width: 90%; /* Ajusta el ancho de las tarjetas en pantallas pequeñas */
     }
+
+    .servicios-container {
+        flex-direction: column;
+    }
 }
+
 /* Estilo del footer */
 footer {
     background-color: #2c3e50;
