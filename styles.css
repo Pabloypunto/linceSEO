@@ -89,22 +89,23 @@ nav a:hover {
     color: #ddd;
 }
 
-/* Estilo de las tarjetas originales */
+/* Estilo de las tarjetas originales adaptado */
 .cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    gap: 30px;
+    margin-bottom: 40px;
 }
 
 .card {
-    background-color: #ffffff;
-    border: 1px solid #ddd;
+    flex: 1;
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 30px;
     border-radius: 10px;
-    padding: 20px;
-    width: calc(45% - 20px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 45%;
 }
 
 .card:hover {
@@ -112,11 +113,16 @@ nav a:hover {
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
+.card h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #e74c3c;
+}
+
 .card p {
-    text-align: justify;
+    line-height: 1.6;
     margin: 0;
-    line-height: 1.8;
-    color: #555;
+    color: #ddd;
 }
 
 /* Adaptabilidad */
