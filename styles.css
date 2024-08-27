@@ -12,7 +12,7 @@ nav {
     background-color: #2c3e50;
     padding: 15px 0;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -35,7 +35,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #e74c3c; /* Cambia de color en lugar de solo subrayar */
+    color: #e74c3c;
 }
 
 /* Contenedor principal */
@@ -43,31 +43,57 @@ nav a:hover {
     width: 80%;
     margin: auto;
     padding: 40px 20px;
-    text-align: center;
 }
 
-/* Título principal */
-h1 {
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 30px;
-    color: #2c3e50;
+/* Sección de dos columnas */
+.two-column-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
 }
 
-/* Imagen principal */
-.container img {
-    max-width: 40%; /* Imagen más grande para mayor impacto */
-    height: auto;
+.image-column img {
+    width: 100%;
     border-radius: 10px;
-    margin: 30px auto;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra para resaltar la imagen */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilo de las tarjetas */
+.text-column {
+    flex: 1;
+    color: #fff;
+    background-color: #2c3e50;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.text-column h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.benefits .benefit {
+    margin-bottom: 20px;
+}
+
+.benefit h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #e74c3c;
+}
+
+.benefit p {
+    line-height: 1.6;
+    color: #ddd;
+}
+
+/* Estilo de las tarjetas originales */
 .cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; /* Mejora la distribución en pantallas grandes */
+    justify-content: center;
     gap: 20px;
 }
 
@@ -76,34 +102,34 @@ h1 {
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 20px;
-    width: calc(45% - 20px); /* Ajusta el ancho para que quepan dos cards con espacio */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: calc(45% - 20px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Sombra más intensa al hacer hover */
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
 .card p {
     text-align: justify;
     margin: 0;
-    line-height: 1.8; /* Mejora la legibilidad */
+    line-height: 1.8;
     color: #555;
 }
 
 /* Adaptabilidad */
 @media (max-width: 768px) {
-    .container img {
-        max-width: 70%; /* La imagen se adapta mejor en pantallas pequeñas */
+    .two-column-section {
+        flex-direction: column;
+    }
+
+    .cards {
+        flex-direction: column;
     }
 
     .card {
-        width: 100%; /* Las tarjetas ocupan toda la pantalla en móviles */
-    }
-
-    h1 {
-        font-size: 28px;
+        width: 100%;
     }
 }
