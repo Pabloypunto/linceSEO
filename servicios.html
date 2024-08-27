@@ -7,39 +7,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <style>
-        .servicio {
-            text-align: center;
-            margin-bottom: 50px;
-            border: 2px solid #000;
-            border-radius: 10px;
-            padding: 20px;
-        }
-        .servicio:hover {
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-        }
-        .icono {
-            font-size: 48px;
-            margin-bottom: 20px;
-        }
-        .titulo-servicio {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-        .descripcion {
-            font-size: 18px;
-            margin-bottom: 20px;
-        }
-        .servicio ul {
-            list-style-type: disc;
-            text-align: left;
-            margin-left: 40px;
-        }
-        .servicio ul li {
-            font-size: 16px;
-            margin-bottom: 10px;
-        }
-    </style>
 </head>
 <body>
     <nav>
@@ -50,53 +17,88 @@
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
     </nav>
+
     <div class="container">
         <h1>Servicios de LinceSEO</h1>
-        <div class="servicio">
-            <i class="fas fa-cogs icono"></i>
-            <h2 class="titulo-servicio">Optimización On-Page</h2>
-            <p class="descripcion">Optimizamos tu sitio web desde dentro para mejorar su visibilidad en los motores de búsqueda. Nuestros servicios incluyen:</p>
-            <ul>
-                <li>Análisis de palabras clave</li>
-                <li>Optimización de títulos y meta descripciones</li>
-                <li>Mejora de la estructura del sitio</li>
-                <li>Optimización de imágenes y contenido</li>
-            </ul>
-        </div>
-        <div class="servicio">
-            <i class="fas fa-file-alt icono"></i>
-            <h2 class="titulo-servicio">Creación de Contenido</h2>
-            <p class="descripcion">Producimos contenido de alta calidad y relevante para tu audiencia y los motores de búsqueda. Nuestros servicios incluyen:</p>
-            <ul>
-                <li>Investigación de palabras clave</li>
-                <li>Desarrollo de contenido único y atractivo</li>
-                <li>Optimización para SEO</li>
-                <li>Publicación y promoción de contenido</li>
-            </ul>
-        </div>
-        <div class="servicio">
-            <i class="fas fa-link icono"></i>
-            <h2 class="titulo-servicio">Construcción de Enlaces</h2>
-            <p class="descripcion">Construimos una red de enlaces de calidad que aumentan la autoridad y relevancia de tu sitio web. Nuestros servicios incluyen:</p>
-            <ul>
-                <li>Investigación y análisis de enlaces</li>
-                <li>Construcción de enlaces naturales y relevantes</li>
-                <li>Desarrollo de estrategias de enlace personalizadas</li>
-                <li>Seguimiento y análisis de resultados</li>
-            </ul>
+        <div class="servicios-container">
+            <!-- Optimización On-Page -->
+            <div class="servicio">
+                <i class="fas fa-cogs icono"></i>
+                <h2 class="titulo-servicio">Optimización On-Page</h2>
+                <p class="descripcion">Optimizamos tu sitio web desde dentro para mejorar su visibilidad en los motores de búsqueda.</p>
+                <ul>
+                    <li>Análisis de palabras clave</li>
+                    <li>Optimización de títulos y meta descripciones</li>
+                    <li>Mejora de la estructura del sitio</li>
+                    <li>Optimización de imágenes y contenido</li>
+                </ul>
+            </div>
+
+            <!-- Creación de Contenido -->
+            <div class="servicio">
+                <i class="fas fa-file-alt icono"></i>
+                <h2 class="titulo-servicio">Creación de Contenido</h2>
+                <p class="descripcion">Producimos contenido de alta calidad y relevante para tu audiencia y los motores de búsqueda.</p>
+                <ul>
+                    <li>Investigación de palabras clave</li>
+                    <li>Desarrollo de contenido único y atractivo</li>
+                    <li>Optimización para SEO</li>
+                    <li>Publicación y promoción de contenido</li>
+                </ul>
+            </div>
+
+            <!-- Construcción de Enlaces -->
+            <div class="servicio">
+                <i class="fas fa-link icono"></i>
+                <h2 class="titulo-servicio">Construcción de Enlaces</h2>
+                <p class="descripcion">Construimos una red de enlaces de calidad que aumentan la autoridad y relevancia de tu sitio web.</p>
+                <ul>
+                    <li>Investigación y análisis de enlaces</li>
+                    <li>Construcción de enlaces naturales y relevantes</li>
+                    <li>Desarrollo de estrategias de enlace personalizadas</li>
+                    <li>Seguimiento y análisis de resultados</li>
+                </ul>
+            </div>
+
+            <!-- Auditoría SEO -->
+            <div class="servicio">
+                <i class="fas fa-search icono"></i>
+                <h2 class="titulo-servicio">Auditoría SEO</h2>
+                <p class="descripcion">Realizamos un análisis exhaustivo de tu sitio web para identificar oportunidades de mejora.</p>
+                <ul>
+                    <li>Análisis técnico del sitio</li>
+                    <li>Evaluación del rendimiento en buscadores</li>
+                    <li>Recomendaciones de optimización</li>
+                    <li>Informe detallado con acciones a seguir</li>
+                </ul>
+            </div>
+
+            <!-- SEO Local -->
+            <div class="servicio">
+                <i class="fas fa-map-marker-alt icono"></i>
+                <h2 class="titulo-servicio">SEO Local</h2>
+                <p class="descripcion">Mejora tu visibilidad en búsquedas locales y atrae clientes en tu área geográfica.</p>
+                <ul>
+                    <li>Optimización de Google My Business</li>
+                    <li>Gestión de reseñas</li>
+                    <li>Creación de citas locales</li>
+                    <li>Estrategias personalizadas de SEO local</li>
+                </ul>
+            </div>
         </div>
     </div>
+
     <!-- Footer -->
-<footer>
-    <div class="footer-container">
-        <p>&copy; 2024 LinceSEO. Todos los derechos reservados.</p>
-        <ul class="footer-links">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="sobre-mi.html">Sobre Mí</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-    </div>
-</footer>
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 LinceSEO. Todos los derechos reservados.</p>
+            <ul class="footer-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="sobre-mi.html">Sobre Mí</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
