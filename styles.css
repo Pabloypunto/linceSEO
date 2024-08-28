@@ -46,14 +46,6 @@ nav a:hover {
     text-align: center;
 }
 
-/* Imagen principal */
-.main-image {
-    width: 80%;
-    max-width: 400px;
-    border-radius: 10px;
-    margin: 20px auto;
-}
-
 /* Sección de tarjetas */
 .cards {
     display: flex;
@@ -155,7 +147,7 @@ nav a:hover {
 
 /* Texto de Introducción */
 .intro-text {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     line-height: 1.8;
     font-size: 18px;
     color: #333;
@@ -163,7 +155,8 @@ nav a:hover {
 
 /* Sección de Habilidades */
 .skills-section {
-    margin-top: 40px;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 .skills-section h2 {
@@ -207,7 +200,8 @@ nav a:hover {
 
 /* Sección de Experiencia */
 .experience-section {
-    margin-top: 40px;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 .experience-section h2 {
