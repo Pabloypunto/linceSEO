@@ -168,9 +168,10 @@ nav a:hover {
 
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas para las habilidades */
     gap: 30px;
     justify-content: center;
+    align-items: center; /* Centra verticalmente */
 }
 
 .skill {
