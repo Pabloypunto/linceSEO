@@ -38,6 +38,34 @@ nav a:hover {
     color: #e74c3c;
 }
 
+/* Toggle para menú en móviles */
+.menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    nav .menu-toggle {
+        display: inline-block;
+        color: #fff;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    nav.active ul {
+        display: flex;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
 /* Contenedor principal */
 .container {
     width: 80%;
@@ -46,13 +74,20 @@ nav a:hover {
     text-align: center;
 }
 
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 20px 10px;
+    }
+}
+
 /* Sección de tarjetas (Home) */
 .cards {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px; /* Incrementa el espacio entre las tarjetas */
-    margin-top: 60px; /* Aumenta el margen superior para mayor separación */
+    gap: 30px;
+    margin-top: 60px;
 }
 
 .card {
@@ -76,6 +111,18 @@ nav a:hover {
     line-height: 1.6;
     margin: 0;
     color: #ddd;
+}
+
+@media (max-width: 768px) {
+    .card {
+        max-width: none;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .cards {
+        margin-top: 30px;
+    }
 }
 
 /* Página de Servicios */
@@ -143,9 +190,20 @@ nav a:hover {
     color: #e74c3c;
 }
 
-/* Estilo específico de la página "Sobre Mí" */
+@media (max-width: 768px) {
+    .servicio {
+        max-width: none;
+        width: 100%;
+        margin: 0 auto;
+    }
 
-/* Texto de Introducción */
+    .servicios-container {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+}
+
+/* Estilo específico de la página "Sobre Mí" */
 .intro-text {
     margin-bottom: 60px;
     line-height: 1.8;
@@ -168,10 +226,10 @@ nav a:hover {
 
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas para las habilidades */
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     justify-content: center;
-    align-items: center; /* Centra verticalmente */
+    align-items: center;
 }
 
 .skill {
@@ -181,7 +239,7 @@ nav a:hover {
     border-radius: 15px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    max-width: 100%; /* Asegura que las tarjetas ocupen el mismo ancho */
+    max-width: 100%;
 }
 
 .skill:hover {
@@ -200,6 +258,18 @@ nav a:hover {
     color: #ddd;
 }
 
+@media (max-width: 768px) {
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .skill {
+        max-width: none;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
 /* Sección de Experiencia */
 .experience-section {
     margin-top: 60px;
@@ -216,7 +286,7 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    align-items: center; /* Centra las tarjetas de experiencia */
+    align-items: center;
 }
 
 .experience {
@@ -227,7 +297,7 @@ nav a:hover {
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: 100%;
-    max-width: 700px; /* Hace las tarjetas más anchas */
+    max-width: 700px;
 }
 
 .experience:hover {
@@ -246,38 +316,22 @@ nav a:hover {
     color: #ddd;
 }
 
-/* Adaptabilidad */
 @media (max-width: 768px) {
-    .main-image {
-        width: 90%;
-        max-width: 300px;
+    .experience {
+        max-width: none;
+        width: 100%;
+        margin: 0 auto;
     }
 
-    .card, .servicio {
-        width: 90%;
+    .experience-container {
+        margin-top: 30px;
     }
+}
 
-    .servicios-container {
-        flex-direction: column;
-    }
-
-    /* Adaptabilidad para nuevas secciones */
-    .bio-section {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .bio-text {
-        text-align: center;
-    }
-
-    .skills-container {
-        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
-    }
-
-    .skill, .experience {
-        width: 90%;
-    }
+/* Imágenes y Medios */
+img, video {
+    max-width: 100%;
+    height: auto;
 }
 
 /* Estilo del footer */
@@ -320,4 +374,20 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        width: 95%;
+    }
+
+    .footer-links {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .footer-links li {
+        display: block;
+        margin: 5px 0;
+    }
 }
