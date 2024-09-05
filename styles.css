@@ -248,6 +248,7 @@ nav a:hover {
     gap: 30px;
     justify-content: center;
     align-items: center;
+    margin-top: 20px; /* Añadir margen superior */
 }
 
 .skill {
@@ -258,6 +259,7 @@ nav a:hover {
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: 100%;
+    margin-bottom: 30px; /* Añadir margen inferior */
 }
 
 .skill:hover {
@@ -283,7 +285,7 @@ nav a:hover {
 
     .skill {
         width: 90%;
-        margin: 0 auto;
+        margin: 0 auto 30px auto; /* Añadir margen inferior para móviles */
     }
 }
 
@@ -417,14 +419,20 @@ footer p {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    border: 2px solid #000;
+    background-color: #2c3e50; /* Fondo coincidente con otras páginas */
     border-radius: 10px;
     margin-top: 50px;
+    color: #fff; /* Color de texto blanco */
 }
 
 .contacto-formulario {
     width: 100%;
     max-width: 400px;
+}
+
+.contacto-formulario label {
+    font-weight: 700;
+    color: #e74c3c; /* Color coincidente con los títulos */
 }
 
 .contacto-formulario input[type="text"],
@@ -436,6 +444,8 @@ footer p {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
+    color: #333; /* Texto interno más oscuro */
+    background-color: #f9f9f9; /* Fondo claro para contraste */
 }
 
 .contacto-formulario textarea {
@@ -447,10 +457,15 @@ footer p {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #000;
+    background-color: #e74c3c; /* Botón rojo */
     color: #fff;
     font-size: 16px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contacto-formulario button:hover {
+    background-color: #c0392b; /* Cambiar color en hover */
 }
 
 .redes-sociales {
@@ -470,6 +485,6 @@ footer p {
 }
 
 .redes-sociales a {
-    color: #000;
+    color: #e74c3c; /* Coincide con el esquema de color */
     font-size: 24px;
 }
