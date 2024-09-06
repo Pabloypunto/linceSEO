@@ -6,9 +6,16 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    min-height: 100vh; /* Asegura que la página ocupe al menos toda la altura de la pantalla */
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+/* Ajuste del viewport para móviles */
+@media (max-width: 768px) {
+    html {
+        font-size: 18px; /* Aumenta el tamaño de la fuente base en móviles */
+    }
 }
 
 /* Navegación */
@@ -62,7 +69,7 @@ nav a:hover {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 100%; /* Mostrar debajo del nav */
+        top: 100%;
         left: 0;
         right: 0;
         background-color: #2c3e50;
@@ -93,7 +100,7 @@ nav a:hover {
     margin: auto;
     padding: 40px 20px;
     text-align: center;
-    flex: 1; /* Para que el contenedor principal llene el espacio disponible */
+    flex: 1;
 }
 
 @media (max-width: 768px) {
@@ -123,7 +130,7 @@ nav a:hover {
 }
 
 .card h2 {
-    font-size: 22px;
+    font-size: 1.4rem; /* Ajuste de tamaño en móviles */
     margin-bottom: 15px;
     color: #e74c3c;
 }
@@ -132,6 +139,7 @@ nav a:hover {
     line-height: 1.6;
     margin: 0;
     color: #ddd;
+    font-size: 1rem; /* Ajuste de tamaño en móviles */
 }
 
 @media (max-width: 768px) {
@@ -140,8 +148,17 @@ nav a:hover {
     }
 
     .card {
-        width: 90%;
+        width: 95%; /* Aumentar el ancho en móviles */
         margin: 0 auto;
+        padding: 20px; /* Aumentar el padding */
+    }
+
+    .card h2 {
+        font-size: 1.6rem; /* Tamaño mayor de título en móviles */
+    }
+
+    .card p {
+        font-size: 1.1rem; /* Texto ligeramente más grande */
     }
 }
 
@@ -170,19 +187,19 @@ nav a:hover {
 }
 
 .icono {
-    font-size: 48px;
+    font-size: 3rem; /* Ajuste en móviles */
     margin-bottom: 20px;
     color: #e74c3c;
 }
 
 .titulo-servicio {
-    font-size: 24px;
+    font-size: 1.6rem; /* Ajuste en móviles */
     margin-bottom: 15px;
     color: #e74c3c;
 }
 
 .descripcion {
-    font-size: 18px;
+    font-size: 1.2rem; /* Ajuste en móviles */
     margin-bottom: 20px;
     color: #ddd;
 }
@@ -195,7 +212,7 @@ nav a:hover {
 }
 
 .servicio ul li {
-    font-size: 16px;
+    font-size: 1.1rem; /* Ajuste en móviles */
     margin-bottom: 10px;
     position: relative;
     padding-left: 25px;
@@ -212,13 +229,30 @@ nav a:hover {
 
 @media (max-width: 768px) {
     .servicio {
-        width: 90%;
+        width: 95%; /* Aumentar el ancho en móviles */
         margin: 0 auto;
+        padding: 20px; /* Aumentar el padding */
     }
 
     .servicios-container {
         flex-direction: column;
         margin-top: 30px;
+    }
+
+    .icono {
+        font-size: 3.5rem; /* Ícono más grande en móviles */
+    }
+
+    .titulo-servicio {
+        font-size: 1.8rem; /* Título más grande en móviles */
+    }
+
+    .descripcion {
+        font-size: 1.3rem; /* Texto más grande en móviles */
+    }
+
+    .servicio ul li {
+        font-size: 1.2rem; /* Texto de lista más grande */
     }
 }
 
@@ -226,7 +260,7 @@ nav a:hover {
 .intro-text {
     margin-bottom: 60px;
     line-height: 1.8;
-    font-size: 18px;
+    font-size: 1.2rem;
     color: #333;
     text-align: center;
 }
@@ -237,7 +271,7 @@ nav a:hover {
 }
 
 .skills-section h2 {
-    font-size: 28px;
+    font-size: 2rem;
     margin-bottom: 20px;
     color: #2c3e50;
 }
@@ -248,7 +282,7 @@ nav a:hover {
     gap: 30px;
     justify-content: center;
     align-items: center;
-    margin-top: 20px; /* Añadir margen superior */
+    margin-top: 20px;
 }
 
 .skill {
@@ -259,7 +293,7 @@ nav a:hover {
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: 100%;
-    margin-bottom: 30px; /* Añadir margen inferior */
+    margin-bottom: 30px;
 }
 
 .skill:hover {
@@ -268,7 +302,7 @@ nav a:hover {
 }
 
 .skill h3 {
-    font-size: 24px;
+    font-size: 1.6rem; /* Ajuste en móviles */
     margin-bottom: 15px;
     color: #e74c3c;
 }
@@ -276,6 +310,7 @@ nav a:hover {
 .skill p {
     line-height: 1.6;
     color: #ddd;
+    font-size: 1rem; /* Ajuste en móviles */
 }
 
 @media (max-width: 768px) {
@@ -284,8 +319,17 @@ nav a:hover {
     }
 
     .skill {
-        width: 90%;
-        margin: 0 auto 30px auto; /* Añadir margen inferior para móviles */
+        width: 95%;
+        margin: 0 auto 30px auto;
+        padding: 20px; /* Aumentar el padding */
+    }
+
+    .skill h3 {
+        font-size: 1.8rem; /* Título más grande en móviles */
+    }
+
+    .skill p {
+        font-size: 1.1rem; /* Texto más grande en móviles */
     }
 }
 
@@ -296,7 +340,7 @@ nav a:hover {
 }
 
 .experience-section h2 {
-    font-size: 28px;
+    font-size: 2rem;
     margin-bottom: 20px;
     color: #2c3e50;
 }
@@ -325,7 +369,7 @@ nav a:hover {
 }
 
 .experience h3 {
-    font-size: 24px;
+    font-size: 1.6rem;
     margin-bottom: 15px;
     color: #e74c3c;
 }
@@ -333,16 +377,26 @@ nav a:hover {
 .experience p {
     line-height: 1.6;
     color: #ddd;
+    font-size: 1rem;
 }
 
 @media (max-width: 768px) {
     .experience {
-        width: 90%;
+        width: 95%;
         margin: 0 auto;
+        padding: 20px; /* Aumentar el padding */
     }
 
     .experience-container {
         margin-top: 30px;
+    }
+
+    .experience h3 {
+        font-size: 1.8rem; /* Título más grande en móviles */
+    }
+
+    .experience p {
+        font-size: 1.1rem; /* Texto más grande en móviles */
     }
 }
 
@@ -350,6 +404,7 @@ nav a:hover {
 img, video {
     max-width: 100%;
     height: auto;
+    display: block; /* Asegura que no haya espacio en blanco debajo de las imágenes */
 }
 
 /* Estilo del footer */
@@ -360,7 +415,7 @@ footer {
     text-align: center;
     position: relative;
     width: 100%;
-    flex-shrink: 0; /* Asegura que el footer siempre esté en la parte inferior */
+    flex-shrink: 0;
 }
 
 .footer-container {
@@ -419,10 +474,10 @@ footer p {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    background-color: #2c3e50; /* Fondo coincidente con otras páginas */
+    background-color: #2c3e50;
     border-radius: 10px;
     margin-top: 50px;
-    color: #fff; /* Color de texto blanco */
+    color: #fff;
 }
 
 .contacto-formulario {
@@ -432,7 +487,7 @@ footer p {
 
 .contacto-formulario label {
     font-weight: 700;
-    color: #e74c3c; /* Color coincidente con los títulos */
+    color: #e74c3c;
 }
 
 .contacto-formulario input[type="text"],
@@ -443,9 +498,9 @@ footer p {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 16px;
-    color: #333; /* Texto interno más oscuro */
-    background-color: #f9f9f9; /* Fondo claro para contraste */
+    font-size: 1rem; /* Ajuste en móviles */
+    color: #333;
+    background-color: #f9f9f9;
 }
 
 .contacto-formulario textarea {
@@ -457,15 +512,15 @@ footer p {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #e74c3c; /* Botón rojo */
+    background-color: #e74c3c;
     color: #fff;
-    font-size: 16px;
+    font-size: 1.2rem; /* Aumentar tamaño del botón */
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .contacto-formulario button:hover {
-    background-color: #c0392b; /* Cambiar color en hover */
+    background-color: #c0392b;
 }
 
 .redes-sociales {
@@ -485,6 +540,6 @@ footer p {
 }
 
 .redes-sociales a {
-    color: #e74c3c; /* Coincide con el esquema de color */
-    font-size: 24px;
+    color: #e74c3c;
+    font-size: 2rem;
 }
