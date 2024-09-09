@@ -15,7 +15,7 @@ body {
 /* Navegación */
 nav {
     background-color: #2c3e50;
-    padding: 10px 0; /* Reducido para móviles */
+    padding: 10px 0;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     position: relative;
@@ -26,19 +26,19 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    flex-wrap: wrap; /* Asegura que el menú se ajuste en móviles */
 }
 
 nav ul li {
-    margin: 0 10px; /* Reducido para espacio en móviles */
+    margin: 0 10px;
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 14px; /* Reducido para móviles */
     transition: color 0.3s ease;
 }
 
@@ -56,7 +56,7 @@ nav a:hover {
         display: none;
         flex-direction: column;
         width: 100%;
-        background-color: #2c3e50; /* Fondo de menú desplegable */
+        background-color: #2c3e50;
     }
 
     nav .menu-toggle {
@@ -66,7 +66,7 @@ nav a:hover {
         cursor: pointer;
         position: absolute;
         right: 15px;
-        top: 10px; /* Ajustado para mejor visualización */
+        top: 10px;
     }
 
     nav.active ul {
@@ -75,22 +75,22 @@ nav a:hover {
 
     nav ul li {
         margin: 10px 0;
+        text-align: center; /* Centrado para móviles */
     }
 }
 
 /* Contenedor principal */
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 100%; /* Ajustado para evitar desplazamiento */
     margin: auto;
-    padding: 40px 20px;
+    padding: 20px;
     text-align: center;
 }
 
 @media (max-width: 768px) {
     .container {
-        width: 95%;
-        padding: 20px 10px;
+        padding: 15px;
     }
 }
 
@@ -99,41 +99,36 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
-    margin-top: 60px;
+    gap: 20px; /* Reducido para móviles */
+    margin-top: 30px;
 }
 
 .card {
     background-color: #2c3e50;
     color: #fff;
-    padding: 20px; /* Reducido para móviles */
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     width: 100%;
-    max-width: 600px;
+    max-width: 90%; /* Ajustado para móviles */
     text-align: center;
 }
 
 .card h2 {
-    font-size: 20px; /* Reducido para móviles */
+    font-size: 18px; /* Reducido para móviles */
     margin-bottom: 15px;
     color: #e74c3c;
 }
 
 .card p {
-    line-height: 1.6;
+    line-height: 1.5;
     margin: 0;
     color: #ddd;
 }
 
 @media (max-width: 768px) {
-    .card {
-        width: 100%;
-        margin: 0 auto;
-    }
-
     .cards {
-        margin-top: 30px;
+        margin-top: 20px;
     }
 }
 
@@ -141,41 +136,41 @@ nav a:hover {
 .servicios-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* Reducido para móviles */
+    gap: 20px;
     justify-content: center;
 }
 
 .servicio {
     background-color: #2c3e50;
     color: #fff;
-    padding: 20px; /* Reducido para móviles */
+    padding: 20px;
     border-radius: 15px;
     width: 100%;
-    max-width: 400px;
+    max-width: 90%; /* Ajustado para móviles */
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .servicio:hover {
-    transform: translateY(-5px); /* Reducido para móviles */
+    transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .icono {
-    font-size: 40px; /* Reducido para móviles */
-    margin-bottom: 15px; /* Reducido para móviles */
+    font-size: 36px; /* Reducido para móviles */
+    margin-bottom: 15px;
     color: #e74c3c;
 }
 
 .titulo-servicio {
-    font-size: 20px; /* Reducido para móviles */
-    margin-bottom: 10px; /* Reducido para móviles */
+    font-size: 18px; /* Reducido para móviles */
+    margin-bottom: 10px;
     color: #e74c3c;
 }
 
 .descripcion {
-    font-size: 16px; /* Reducido para móviles */
-    margin-bottom: 15px; /* Reducido para móviles */
+    font-size: 14px; /* Reducido para móviles */
+    margin-bottom: 15px;
     color: #ddd;
 }
 
@@ -189,7 +184,7 @@ nav a:hover {
     font-size: 14px; /* Reducido para móviles */
     margin-bottom: 10px;
     position: relative;
-    padding-left: 20px; /* Reducido para móviles */
+    padding-left: 20px;
     color: #fff;
 }
 
@@ -204,41 +199,40 @@ nav a:hover {
 
 @media (max-width: 768px) {
     .servicio {
-        width: 100%;
-        margin: 0 auto;
+        max-width: 100%;
     }
 
     .servicios-container {
         flex-direction: column;
-        margin-top: 20px; /* Reducido para móviles */
+        margin-top: 20px;
     }
 }
 
 /* Estilo específico de la página "Sobre Mí" */
 .intro-text {
-    margin-bottom: 60px;
-    line-height: 1.8;
-    font-size: 18px;
+    margin-bottom: 30px; /* Reducido para móviles */
+    line-height: 1.6;
+    font-size: 16px; /* Reducido para móviles */
     color: #333;
     text-align: center;
 }
 
 /* Sección de Habilidades */
 .skills-section {
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 30px; /* Reducido para móviles */
+    margin-bottom: 30px; /* Reducido para móviles */
 }
 
 .skills-section h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
+    font-size: 24px; /* Reducido para móviles */
+    margin-bottom: 15px;
     color: #2c3e50;
 }
 
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px; /* Reducido para móviles */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajusta automáticamente */
+    gap: 20px;
     justify-content: center;
     align-items: center;
 }
@@ -246,7 +240,7 @@ nav a:hover {
 .skill {
     background-color: #2c3e50;
     color: #fff;
-    padding: 20px; /* Reducido para móviles */
+    padding: 20px;
     border-radius: 15px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -254,18 +248,18 @@ nav a:hover {
 }
 
 .skill:hover {
-    transform: translateY(-5px); /* Reducido para móviles */
+    transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .skill h3 {
-    font-size: 20px; /* Reducido para móviles */
-    margin-bottom: 10px; /* Reducido para móviles */
+    font-size: 18px; /* Reducido para móviles */
+    margin-bottom: 10px;
     color: #e74c3c;
 }
 
 .skill p {
-    line-height: 1.6;
+    line-height: 1.5;
     color: #ddd;
 }
 
@@ -273,67 +267,61 @@ nav a:hover {
     .skills-container {
         grid-template-columns: 1fr;
     }
-
-    .skill {
-        width: 100%;
-        margin: 0 auto;
-    }
 }
 
 /* Sección de Experiencia */
 .experience-section {
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 30px; /* Reducido para móviles */
+    margin-bottom: 30px; /* Reducido para móviles */
 }
 
 .experience-section h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
+    font-size: 24px; /* Reducido para móviles */
+    margin-bottom: 15px;
     color: #2c3e50;
 }
 
 .experience-container {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Reducido para móviles */
+    gap: 20px;
     align-items: center;
 }
 
 .experience {
     background-color: #2c3e50;
     color: #fff;
-    padding: 20px; /* Reducido para móviles */
+    padding: 20px;
     border-radius: 15px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: 100%;
-    max-width: 700px;
+    max-width: 90%; /* Ajustado para móviles */
 }
 
 .experience:hover {
-    transform: translateY(-5px); /* Reducido para móviles */
+    transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .experience h3 {
-    font-size: 20px; /* Reducido para móviles */
-    margin-bottom: 10px; /* Reducido para móviles */
+    font-size: 18px; /* Reducido para móviles */
+    margin-bottom: 10px;
     color: #e74c3c;
 }
 
 .experience p {
-    line-height: 1.6;
+    line-height: 1.5;
     color: #ddd;
 }
 
 @media (max-width: 768px) {
     .experience {
-        width: 100%;
-        margin: 0 auto;
+        max-width: 100%;
     }
 
     .experience-container {
-        margin-top: 20px; /* Reducido para móviles */
+        margin-top: 20px;
     }
 }
 
@@ -355,48 +343,14 @@ footer {
 }
 
 .footer-container {
-    width: 80%;
+    width: 100%;
+    max-width: 100%; /* Ajustado para móviles */
     margin: auto;
+    padding: 0 15px; /* Añadido padding para móviles */
 }
 
-.footer-links {
-    list-style-type: none;
-    padding: 0;
-    margin: 10px 0 0;
-}
-
-.footer-links li {
-    display: inline;
-    margin: 0 10px;
-}
-
-.footer-links a {
-    color: #e74c3c;
-    text-decoration: none;
-    font-weight: 700;
-    transition: color 0.3s ease;
-}
-
-.footer-links a:hover {
-    color: #fff;
-}
-
-footer p {
+.footer-container p {
+    font-size: 14px; /* Reducido para móviles */
     margin: 0;
-}
-
-@media (max-width: 768px) {
-    .footer-container {
-        width: 95%;
-    }
-
-    .footer-links {
-        text-align: center;
-        padding-bottom: 10px;
-    }
-
-    .footer-links li {
-        display: block;
-        margin: 5px 0;
-    }
+    color: #ddd;
 }
