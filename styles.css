@@ -1,4 +1,8 @@
 /* Estilo general */
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     color: #333;
@@ -14,12 +18,15 @@ nav {
     padding: 15px 0;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Posiciona correctamente el menú en móviles */
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center; /* Centra los elementos del menú */
 }
 
 nav ul li {
@@ -39,11 +46,31 @@ nav a:hover {
     color: #e74c3c;
 }
 
+/* Toggle para menú en móviles */
+.menu-toggle {
+    display: none;
+}
+
 @media (max-width: 768px) {
     nav ul {
-        display: flex;
+        display: none;
         flex-direction: column;
-        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav .menu-toggle {
+        display: inline-block;
+        color: #fff;
+        font-size: 24px;
+        cursor: pointer;
+        position: absolute; /* Posiciona el botón en la parte superior derecha */
+        right: 15px;
+        top: 15px;
+    }
+
+    nav.active ul {
+        display: flex;
     }
 
     nav ul li {
@@ -315,6 +342,7 @@ nav a:hover {
 img, video {
     max-width: 100%;
     height: auto;
+    display: block; /* Asegura que no haya margen extra */
 }
 
 /* Estilo del footer */
