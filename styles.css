@@ -23,7 +23,7 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block; /* Cambiado de inline a inline-block para mejor control */
 }
 
 nav a {
@@ -39,26 +39,11 @@ nav a:hover {
     color: #e74c3c;
 }
 
-/* Toggle para menú en móviles */
-.menu-toggle {
-    display: none;
-}
-
 @media (max-width: 768px) {
     nav ul {
-        display: none;
-        flex-direction: column;
-    }
-
-    nav .menu-toggle {
-        display: inline-block;
-        color: #fff;
-        font-size: 24px;
-        cursor: pointer;
-    }
-
-    nav.active ul {
         display: flex;
+        flex-direction: column;
+        padding: 0;
     }
 
     nav ul li {
