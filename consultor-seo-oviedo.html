@@ -11,40 +11,67 @@
     <style>
         body {
             font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
         }
         .container {
             padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 36px;
+            color: #0056b3;
+            text-align: center;
+            margin-bottom: 30px;
         }
         .cards {
             display: flex;
             gap: 20px;
+            flex-wrap: wrap;
             margin-bottom: 40px;
         }
         .card {
-            background-color: #f4f4f4;
+            background-color: #fff;
+            border: 1px solid #ddd;
             padding: 20px;
             border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             flex: 1;
+            min-width: 280px;
+        }
+        .card h2 {
+            color: #0056b3;
+        }
+        .card p {
+            color: #555;
+            line-height: 1.6;
         }
         .pricing {
             margin-top: 40px;
+        }
+        .pricing .card {
+            background-color: #e0f7fa;
+            border-color: #00796b;
         }
         .pricing ul {
             list-style-type: none;
             padding: 0;
         }
         .pricing li {
-            background-color: #f4f4f4;
+            background-color: #fff;
             margin-bottom: 10px;
             padding: 15px;
             border-radius: 8px;
+            border: 1px solid #ddd;
         }
         .pricing h2 {
+            color: #00796b;
             margin-bottom: 20px;
         }
         .btn {
             display: inline-block;
-            background-color: #007BFF;
+            background-color: #00796b;
             color: white;
             padding: 10px 20px;
             border-radius: 5px;
@@ -53,7 +80,21 @@
             margin-top: 20px;
         }
         .btn:hover {
-            background-color: #0056b3;
+            background-color: #004d40;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+        footer a:hover {
+            background-color: #444;
         }
     </style>
 </head>
@@ -90,31 +131,31 @@
         </div>
 
         <section class="pricing">
-            <h2>Tarifas de Consultoría SEO</h2>
-            <p>Los precios varían según el tipo de servicio y la complejidad del proyecto. Aquí tienes algunas opciones más accesibles:</p>
-            <ul>
-                <li><strong>Auditoría SEO:</strong> Desde 120€ (análisis completo de tu web y plan de acción)</li>
-                <li><strong>Optimización On-Page:</strong> Desde 90€ (mejoras técnicas y de contenido en tu web)</li>
-                <li><strong>Estrategia de Linkbuilding:</strong> Desde 150€/mes (conseguir enlaces de calidad para mejorar tu autoridad)</li>
-                <li><strong>SEO mensual:</strong> Desde 300€/mes (gestión SEO completa y seguimiento continuo)</li>
-            </ul>
-            <p>Si necesitas un presupuesto personalizado, contáctame y analizamos tu caso.</p>
-            <a href="contacto.html" class="btn">Solicitar presupuesto</a>
+            <div class="card">
+                <h2>Tarifas de Consultoría SEO</h2>
+                <p>Los precios varían según el tipo de servicio y la complejidad del proyecto. Aquí tienes algunas opciones más accesibles:</p>
+                <ul>
+                    <li><strong>Auditoría SEO:</strong> Desde 120€ (análisis completo de tu web y plan de acción)</li>
+                    <li><strong>Optimización On-Page:</strong> Desde 90€ (mejoras técnicas y de contenido en tu web)</li>
+                    <li><strong>Estrategia de Linkbuilding:</strong> Desde 150€/mes (conseguir enlaces de calidad para mejorar tu autoridad)</li>
+                    <li><strong>SEO mensual:</strong> Desde 300€/mes (gestión SEO completa y seguimiento continuo)</li>
+                </ul>
+                <p>Si necesitas un presupuesto personalizado, contáctame y analizamos tu caso.</p>
+                <a href="contacto.html" class="btn">Solicitar presupuesto</a>
+            </div>
         </section>
     </div>
 
     <footer>
-        <div class="footer-container">
-            <p>&copy; 2024 LinceSEO. Todos los derechos reservados.</p>
-            <ul class="footer-links">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="sobre-mi.html">Sobre Mí</a></li>
-                <li><a href="consultor-seo-oviedo.html">Consultor SEO</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="blog.html">Blog</a></li>
-            </ul>
-        </div>
+        <p>&copy; 2024 LinceSEO. Todos los derechos reservados.</p>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="sobre-mi.html">Sobre Mí</a></li>
+            <li><a href="consultor-seo-oviedo.html">Consultor SEO</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
     </footer>
 
 </body>
